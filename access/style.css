@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap');
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark_30s:#21212A;
+    --dark_st : #141526;
+    --blue:#1cbfff;
+    --color__gray--dark: #21212a;
+    --box:#26273b;
+    --color__header__gradient: linear-gradient(top,#21212a 0% ,#14141a 100%);
+}
+html{
+
+}
+body{
+    background: var(--dark_30s) ;
+    width: 100vw;
+    height: 100vh;
+}
+#head{
+    background-color: var(--color__header__gradient);
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#head img{
+    height: 2rem;
+}
+#content{
+    margin: auto;
+    margin-top: 5rem;
+    position: relative;
+    width: 50%;
+    height: 50%;
+}
+#content .language{
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    width: 10rem;
+    height: 1.5rem;
+    background-color: var(--blue);
+}
+#content .first{
+}
+#content .icon{
+    width: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#content .icon .save, #content .icon .dislike{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+#content .icon i{
+    color: black;
+}
+#content .content{
+    margin-top: 2rem;
+    color: white;
+}
+#content .content h1{
+    color: orange;
+    font-family: consolas;
+    margin: 0 0 2rem 0;
+}
+#content .content p{
+    font-family: 'Roboto Mono', 'source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+#content .content pre{
+    background-color: #353740;
+    padding: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+#content .content h2{
+    font-family: consolas;
+    color: orange;
+}
+#tool{
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 2rem;
+    bottom: 2rem;
+}
