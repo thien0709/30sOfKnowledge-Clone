@@ -34,8 +34,7 @@ body{
     margin: auto;
     margin-top: 5rem;
     position: relative;
-    width: 50%;
-    height: 50%;
+    width: 60%;
 }
 #content .language{
     font-size: 1.2rem;
@@ -43,11 +42,11 @@ body{
     text-align: center;
     width: 10rem;
     height: 1.5rem;
-    background-color: var(--blue);
+    background-color: yellow;
 }
 #content .first{
 }
-#content .icon{
+#content .icons{
     width: 7rem;
     display: flex;
     justify-content: space-around;
@@ -56,17 +55,20 @@ body{
     right: 0;
     top: 0;
 }
-#content .icon .save, #content .icon .dislike{
+.icon i{
+    background-color: white;
+    font-size: 1rem;
     width: 2.5rem;
     height: 2.5rem;
-    background-color: white;
-    border-radius: 50%;
-    display: grid;
+    display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
-#content .icon i{
-    color: black;
+.icon i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: cubic-bezier(.8, 0, 0.2, 1.5) 0.5s;
 }
 #content .content{
     margin-top: 2rem;
@@ -94,14 +96,17 @@ body{
     color: orange;
 }
 #tool{
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
+    position: fixed;
     right: 2rem;
     bottom: 2rem;
+}
+#tool .more{
+    display: grid;
+    position: absolute;
+    bottom: 2.5rem;
+    height: 10rem;
+    width: 2.5rem;
+    justify-content: center;
+    background-color: white;
+
 }
