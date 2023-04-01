@@ -14,7 +14,7 @@ const nameBar = document.querySelectorAll("#tool .nameBar h4")
 console.log(button, nameBar);
 for(let i=0;i<button.length;i++){
     button[i].addEventListener("mouseenter", function(){
-        nameBar[i].style.display = flex;
+        nameBar[i].style.display = 
     })
 }
 // Copy
