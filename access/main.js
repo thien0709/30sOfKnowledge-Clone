@@ -14,7 +14,6 @@ const nameBar = document.querySelectorAll("#tool .nameBar h6");
 for (let i = 0; i < button.length; i++) {
   button[i].addEventListener("mouseenter", function () {
     nameBar[i].style.display = "grid";
-    console.log(button[i], nameBar[i]);
   });
   button[i].addEventListener("mouseout", function () {
     nameBar[i].style.display = "none";

@@ -21,7 +21,7 @@ body{
     height: 100vh;
 }
 #head{
-    background-color: var(--color__header__gradient);
+    background: linear-gradient(180deg,#14141a,#21212a);
     height: 10rem;
     display: flex;
     justify-content: center;
@@ -43,6 +43,7 @@ body{
     width: 10rem;
     height: 1.5rem;
     background-color: yellow;
+    border-radius: 2px;
 }
 #content .first{
 }
@@ -81,6 +82,7 @@ body{
     padding: 2rem 0;
     width: 100%;
     background-color: #353740;
+    border-radius: 5px;
 }
 #content .content h2{
     font-family: consolas;
@@ -190,4 +192,11 @@ h6{
     background-color: whitesmoke;
     border-radius: 5px;
     font-size: 1rem;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    height: 3rem;
+    width: 100vw;
+    background: linear-gradient(180deg,#21212a,#14141a);
 }
