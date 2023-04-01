@@ -73,7 +73,6 @@ body{
 }
 #content .content .code{
     position: relative;
-
     font-family: 'Courier New', Courier, monospace;
     font-size: 1rem;
     margin-bottom: 2rem;
@@ -89,8 +88,8 @@ body{
 }
 .content .icon{
     position: absolute;
-    right: 0;
-    bottom: 0;
+    right: -1rem;
+    bottom: -1rem;
 }
 .icon1{
     position: fixed;
@@ -156,23 +155,21 @@ body{
 #tool .bar{
     order: 2;
 }
-/* #namebar{
-    bottom: 5rem;
-    display: grid;
+#copied{
+    display: none;
+    margin: auto;
+    margin-top: 5rem;
     width: 10rem;
-    height: 19rem;
-    background-color: var(--blue);
-} */
-/* .setting,.snipped,.store,.donate,.letter{
-    
-    border-radius: 2px;
-    height: 2rem;
+    height: 2.5rem;
     background-color: white;
+    border-radius: 4px;
+}
+#copied.active{
+    display: block;
+}
+#copied .box{
     font-size: 1.5rem;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    font-family: "Roboto Mono";
-    padding: 0 0.5rem;
-    color: var(--dark_30s);
-} */
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    line-height: 2.5rem;
+}

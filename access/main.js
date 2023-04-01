@@ -16,3 +16,15 @@ const button = document.querySelectorAll("#tool .more i");
 //         icon.style.transform = 'translateY(2rem)';
 //     })
 // }
+
+// Copy
+const copy =document.querySelector(".code .icon");
+const copied = document.querySelector("#copied");
+const code = document.querySelector("pre");
+copy.addEventListener("click", function(){
+    navigator.clipboard.writeText(code.textContent);
+    copied.classList.add("active");
+    setTimeout(() => {
+        copied.classList.remove("active");
+    }, 1000);
+});
