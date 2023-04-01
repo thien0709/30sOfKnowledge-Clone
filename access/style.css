@@ -55,6 +55,63 @@ body{
     right: 0;
     top: 0;
 }
+
+#content .content{
+    margin-top: 2rem;
+    color: black;
+}
+#content .content h1{
+    color: orange;
+    font-family: consolas;
+    margin: 0 0 2rem 0;
+}
+#content .content p{
+    font-family: 'Roboto Mono', 'source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+#content .content .code{
+    position: relative;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+#content .content pre{    
+    padding: 2rem 0;
+    width: 100%;
+    background-color: #353740;
+}
+#content .content h2{
+    font-family: consolas;
+    color: orange;
+}
+.content .icon{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.icon1{
+    position: fixed;
+    bottom: 3rem; 
+    right: 3rem;
+}
+.icon1 i,.more i{
+    background-color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.icon1 i:hover,.more i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: cubic-bezier(.8, 0, 0.2, 1.5) 0.5s;
+}
 .icon i{
     background-color: white;
     font-size: 1rem;
@@ -69,31 +126,6 @@ body{
     cursor: pointer;
     transform: scale(1.2);
     transition: cubic-bezier(.8, 0, 0.2, 1.5) 0.5s;
-}
-#content .content{
-    margin-top: 2rem;
-    color: white;
-}
-#content .content h1{
-    color: orange;
-    font-family: consolas;
-    margin: 0 0 2rem 0;
-}
-#content .content p{
-    font-family: 'Roboto Mono', 'source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace;;
-    font-size: 0.8rem;
-    margin-bottom: 2rem;
-}
-#content .content pre{
-    background-color: #353740;
-    padding: 2rem;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    margin-bottom: 2rem;
-}
-#content .content h2{
-    font-family: consolas;
-    color: orange;
 }
 #tool{
     position: fixed;
@@ -123,26 +155,6 @@ body{
 }
 #tool .bar{
     order: 2;
-}
-.icon1{
-    position: fixed;
-    bottom: 3rem; 
-    right: 3rem;
-}
-.icon1 i,.more i{
-    background-color: white;
-    font-size: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-}
-.icon1 i:hover,.more i:hover{
-    cursor: pointer;
-    transform: scale(1.2);
-    transition: cubic-bezier(.8, 0, 0.2, 1.5) 0.5s;
 }
 /* #namebar{
     bottom: 5rem;
