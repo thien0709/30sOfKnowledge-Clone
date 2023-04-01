@@ -98,15 +98,29 @@ body{
 #tool{
     position: fixed;
     right: 2rem;
-    bottom: 2rem;
+    bottom: 2rem;   
+    display: grid;
+    position: absolute;
+    justify-content: center;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    width: 2.5rem;
+    height: 15rem;
+}
+#tool i{
+    padding: 0.5rem;
+    
+}
+#tool i:hover{
+    transform: scale(1.2);
+    transition: cubic-bezier(.8, 0, 0.2, 1.5) 0.5s;
+    border: 2px solid var(--blue);
 }
 #tool .more{
     display: grid;
-    position: absolute;
-    bottom: 2.5rem;
-    height: 10rem;
-    width: 2.5rem;
-    justify-content: center;
-    background-color: white;
-
+    order: 1;
+}
+#tool .bar{
+    order: 2;
 }
