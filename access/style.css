@@ -100,27 +100,42 @@ body{
     right: 2rem;
     bottom: 2rem;   
     display: grid;
-    position: absolute;
     justify-content: center;
     background-color: white;
     padding: 0.5rem;
     border-radius: 2rem;
-    width: 2.5rem;
-    height: 15rem;
+    width: 3rem;
+    height: 20rem;
 }
 #tool i{
-    padding: 0.5rem;
-    
-}
-#tool i:hover{
-    transform: scale(1.2);
-    transition: cubic-bezier(.8, 0, 0.2, 1.5) 0.5s;
-    border: 2px solid var(--blue);
+    padding: 0.7rem;
+    border-radius: 50%;
 }
 #tool .more{
     display: grid;
     order: 1;
+    justify-content: center;
+    align-items: center;
 }
 #tool .bar{
     order: 2;
+}
+.icon1{
+    position: absolute;
+    bottom: 0;
+}
+.icon1 i,.more i{
+    background-color: white;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+.icon1 i:hover,.more i:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: cubic-bezier(.8, 0, 0.2, 1.5) 0.5s;
 }
