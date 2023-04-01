@@ -97,13 +97,15 @@ body{
 }
 #tool{
     position: fixed;
-    right: 2rem;
-    bottom: 2rem;   
+    right: 3rem;
+    bottom: 3rem;   
     display: grid;
     justify-content: center;
     background-color: white;
     border-radius: 2rem;
     width: 3rem;
+}
+#tool.active{
     height: 20rem;
 }
 #tool i{
@@ -111,17 +113,21 @@ body{
     border-radius: 50%;
 }
 #tool .more{
-    display: grid;
+    display: none;
     order: 1;
     justify-content: center;
     align-items: center;
+}
+#tool .more.active{
+    display: grid;    
 }
 #tool .bar{
     order: 2;
 }
 .icon1{
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 3rem; 
+    right: 3rem;
 }
 .icon1 i,.more i{
     background-color: white;
@@ -138,19 +144,16 @@ body{
     transform: scale(1.2);
     transition: cubic-bezier(.8, 0, 0.2, 1.5) 0.5s;
 }
-#namebar{
-    position: absolute;
-    right: 7rem;
+/* #namebar{
+    bottom: 5rem;
     display: grid;
     width: 10rem;
     height: 19rem;
     background-color: var(--blue);
-}
-.setting,.snipped,.store,.donate,.letter{
+} */
+/* .setting,.snipped,.store,.donate,.letter{
     
     border-radius: 2px;
-    /* bottom: 5rem;
-    width: 7rem; */
     height: 2rem;
     background-color: white;
     font-size: 1.5rem;
@@ -160,4 +163,4 @@ body{
     font-family: "Roboto Mono";
     padding: 0 0.5rem;
     color: var(--dark_30s);
-}
+} */
