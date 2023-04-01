@@ -177,14 +177,12 @@ body{
     display: grid;
     position: absolute;
     right: 5em;
-    bottom: 2.5rem;
-    height: 280px;
-    justify-content: space-around;
-    align-items: center;
+    bottom: 8rem;
+
 }
 h6{
+    display: none;
     font-family: 'Courier New', Courier, monospace;
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 10rem;
