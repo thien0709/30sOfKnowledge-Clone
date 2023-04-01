@@ -10,13 +10,13 @@ bar.addEventListener("click", function (){
 const icon = document.querySelector("#notion");
 const notion = document.querySelector("#notion h6");
 const button = document.querySelectorAll("#tool .more i");
-
-// for(let i=0;i<button.length;i++){
-//     button[i].addEventListener("mouseenter", function(){
-//         icon.style.transform = 'translateY(2rem)';
-//     })
-// }
-
+const nameBar = document.querySelectorAll("#tool .nameBar h4")
+console.log(button, nameBar);
+for(let i=0;i<button.length;i++){
+    button[i].addEventListener("mouseenter", function(){
+        nameBar[i].style.display = flex;
+    })
+}
 // Copy
 const copy =document.querySelector(".code .icon");
 const copied = document.querySelector("#copied");

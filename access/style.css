@@ -37,6 +37,8 @@ body{
     width: 60%;
 }
 #content .language{
+    position: absolute;
+    bottom: 1rem;
     font-size: 1.2rem;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
@@ -45,6 +47,7 @@ body{
     background-color: yellow;
 }
 #content .first{
+    position: relative;
 }
 #content .icons{
     width: 7rem;
@@ -53,7 +56,7 @@ body{
     align-items: center;
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: -1rem;
 }
 
 #content .content{
@@ -172,4 +175,23 @@ body{
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     line-height: 2.5rem;
+}
+.nameBar{
+    display: none;
+    position: absolute;
+    right: 5em;
+    bottom: 2.5rem;
+    height: 280px;
+    justify-content: space-around;
+    align-items: center;
+}
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 2.5rem;
+    background-color: whitesmoke;
+    border-radius: 5px;
 }
