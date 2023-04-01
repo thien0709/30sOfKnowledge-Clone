@@ -6,7 +6,7 @@ bar.addEventListener("click", function (){
     tool.classList.toggle("active");
     more.classList.toggle("active");
 })
-
+// Notification
 const icon = document.querySelector("#notion");
 const notion = document.querySelector("#notion h6");
 const button = document.querySelectorAll("#tool .more i");
