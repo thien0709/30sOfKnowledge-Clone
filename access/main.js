@@ -13,10 +13,10 @@ const button = document.querySelectorAll("#tool .more i");
 const nameBar = document.querySelectorAll("#tool .nameBar h6");
 for (let i = 0; i < button.length; i++) {
   button[i].addEventListener("mouseenter", function () {
-    nameBar[i].style.display = "grid";
+    nameBar[i].classList.add("active");
   });
   button[i].addEventListener("mouseout", function () {
-    nameBar[i].style.display = "none";
+    nameBar[i].classList.remove("active");
   });
 }
 // Copy
@@ -28,5 +28,5 @@ copy.addEventListener("click", function () {
   copied.classList.add("active");
   setTimeout(() => {
     copied.classList.remove("active");
-  }, 1000);
+  }, 1500);
 });
